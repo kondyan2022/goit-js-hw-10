@@ -3,7 +3,6 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import 'notiflix/dist/notiflix-3.2.6.min.css';
 import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
-// import './css/index.css';
 
 Notify.init({ width: '420px', position: 'center-center' });
 
