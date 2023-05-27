@@ -1,0 +1,84 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 16px;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  margin: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.loader {
+  font-size: 18px;
+}
+.cat-info {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.cat-image {
+  object-position: top;
+  object-fit: scale-down;
+  width: 35vw;
+}
+
+.card {
+  width: 30vw;
+}
+
+.h-temp {
+  font-weight: 700;
+}
+
+.error {
+  font-size: 18px;
+  color: red;
+}
+
+.is-hidden {
+  display: none;
+}
+.spin-loader {
+  display: inline-block;
+  color: #212121;
+  position: relative;
+}
+.spin-loader::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: 6px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-bottom-color: #ff3d00;
+  box-sizing: border-box;
+  animation: rotation 0.6s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.select-block {
+  width: 35vw;
+}
