@@ -45,7 +45,10 @@ function createOptionList(array) {
     .insertAdjacentHTML(
       'afterbegin',
       array
-        .map(({ id, name }) => `<option value="${id}">${name}</option>`)
+        .map(
+          ({ id, name }) =>
+            `<option class="select-item" value="${id}">${name}</option>`
+        )
         .join('')
     );
   new SlimSelect({

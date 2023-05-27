@@ -80,5 +80,8 @@ img {
   }
 }
 .select-block {
-  width: 20vw;
+  width: 30vw;
+}
+.breed-select {
+  --ss-content-height: 85vh;
 }
