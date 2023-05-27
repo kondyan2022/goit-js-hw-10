@@ -9,7 +9,7 @@ export function fetchBreeds() {
   return fetch(url, { headers })
     .then(response => {
       if (!response.ok) {
-        throw new Error(response.status);
+        // throw new Error(response.status);
       }
       return response.json();
     })
