@@ -20,6 +20,12 @@ img {
   display: block;
   max-width: 100%;
 }
+.select-block {
+  width: 20vw;
+}
+.breed-select {
+  --ss-content-height: 85vh;
+}
 
 .loader {
   font-size: 18px;
@@ -80,10 +86,4 @@ img {
   100% {
     transform: rotate(360deg);
   }
-}
-.select-block {
-  width: 20vw;
-}
-.breed-select {
-  --ss-content-height: 85vh;
 }
