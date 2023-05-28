@@ -19,7 +19,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  border-radius: 4px;
 }
 
 .loader {
@@ -35,6 +34,8 @@ img {
   object-position: top;
   object-fit: scale-down;
   width: 35vw;
+  border-radius: 4px;
+  box-shadow: 0 0 5px var(--ss-primary-color);
 }
 
 .card {
@@ -81,7 +82,7 @@ img {
   }
 }
 .select-block {
-  width: 30vw;
+  width: 20vw;
 }
 .breed-select {
   --ss-content-height: 85vh;
