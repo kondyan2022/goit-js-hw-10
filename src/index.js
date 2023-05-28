@@ -58,13 +58,20 @@ function createOptionList(array) {
 
 function createCatView({ url, height, width, name, temperament, description }) {
   document.querySelector('div.cat-info').innerHTML = `
-     <img src="${url}" alt="${name}" class="cat-image" height="${height}" width="${width}" />
+     <img src="${url}" alt="${name}" class="cat-image"  />
      <div class="card"> 
      <h1 class="name">${name}</h1>
       <p class="description">${description}</p>
       <p class="temperament"><span class="h-temp">Temperament: </span>${temperament}</p>
       </div>`;
 }
+//  <img
+//    src="${url}"
+//    alt="${name}"
+//    class="cat-image"
+//    height="${height}"
+//    width="${width}"
+//  />;
 
 showSelect(false);
 showCatInfo(false);
