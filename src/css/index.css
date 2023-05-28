@@ -19,9 +19,10 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .select-block {
-  width: 20vw;
+  width: 20%;
 }
 .breed-select {
   --ss-content-height: 85vh;
@@ -38,14 +39,14 @@ img {
 
 .cat-image {
   object-position: top;
-  object-fit: scale-down;
-  width: 35vw;
+  object-fit: cover;
+  max-width: 35%;
   border-radius: 4px;
   box-shadow: 0 0 5px var(--ss-primary-color);
 }
 
 .card {
-  width: 30vw;
+  width: 30%;
 }
 
 .h-temp {
@@ -85,5 +86,32 @@ img {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 50%;
+  }
+
+  .cat-image {
+    max-width: 50%;
+  }
+  .select-block {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .card {
+    width: 80vw;
+  }
+  .cat-info {
+    flex-direction: column;
+  }
+  .cat-image {
+    max-width: 100%;
+  }
+  .select-block {
+    width: 70%;
   }
 }
