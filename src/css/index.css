@@ -35,11 +35,11 @@ img {
   display: flex;
   gap: 40px;
   margin-top: 40px;
+  align-items: flex-start;
 }
 
 .cat-image {
-  object-position: top;
-  object-fit: cover;
+  /* object-fit: cover; */
   max-width: 35%;
   border-radius: 4px;
   box-shadow: 0 0 5px var(--ss-primary-color);
@@ -101,7 +101,7 @@ img {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 780px) {
   .card {
     width: 80vw;
   }
