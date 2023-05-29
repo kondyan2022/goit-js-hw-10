@@ -1,11 +1,6 @@
 import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
-import {
-  refs,
-  showLoader,
-  showError,
-  showSelect,
-  showCatInfo,
-} from './js/cat-refs';
+import { showLoader, showError, showSelect, showCatInfo } from './js/loader';
+import { refs } from './js/cat-refs';
 
 import SlimSelect from 'slim-select';
 
